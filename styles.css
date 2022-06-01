@@ -1,0 +1,161 @@
+*{
+    margin:0px;
+    text-decoration: none;
+    list-style-type: none;
+    color:white;
+    text-shadow: 2px 2px 4px black;
+}
+
+header {
+    background-color: #772F41;
+    font-size: 400%;
+}
+
+header h1{
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+nav ul{
+  display: flex;
+  color: white;
+}
+
+nav{
+    background-color: #261923;
+}
+
+li{
+    margin: 10px;
+    padding: 10px;
+    font-size: x-large;
+}
+
+li:hover{
+    background-color:#661327;
+}
+
+aside {
+    background-color:#772F41;
+}
+
+footer {
+    background-color: #261923;
+    font-size: 400%;
+}
+
+section a{
+    font-size: 400%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 300px auto 300px;
+    grid-template-rows: 200px 50px 900px 300px;
+}
+
+.grid-container > * {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-gallery {
+    background-color: #D5EBF6;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.grid-gallery > * {
+    background-color:#261923;
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+section a:hover{
+    background-color:#661327;
+}
+
+
+header, footer, nav{
+    grid-column: 1 / span 3;
+}
+
+label{
+    margin: 5px;
+}
+
+form input{
+    color: black;
+}
+
+
+.anuncio img{
+    width: 100%;
+}
+.anuncio{
+    width: 100%;
+    background-color: white;
+  }
+.anuncio {
+    margin: 20px;
+    border: 5px solid black;
+    text-align: center;
+    padding: 1px;
+  }
+.anuncio a {
+    background-color:grey;
+    padding: 1%;
+    text-decoration: none;
+  }
+
+@media all and (max-width:800px){
+    aside, section{
+        grid-column: 1 / span 3;
+    }
+    section a{
+        grid-column: 1 / span 2;
+    }
+    .grid-container{
+        grid-template-rows: 300px 300px 100px 800px 400px 300px;
+    }
+
+    .anuncio img{
+        width: 80%;
+    }
+    .anuncio{
+        width: 40%;
+        background-color: white;
+      }
+    .anuncio {
+        margin: 20px;
+        border: 5px solid black;
+        text-align: center;
+        padding: 1px;
+      }
+    .anuncio a {
+        background-color:grey;
+        padding: 1%;
+        text-decoration: none;
+      }
+    
+    nav ul {
+        display: flex;
+
+      }
+
+      nav ul{
+        color: white;
+        display: block;
+        text-decoration: none;
+        padding: .5em 1em;
+      }  
+}
